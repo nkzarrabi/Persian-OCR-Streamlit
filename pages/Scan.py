@@ -72,7 +72,7 @@ with input_col:
                     output.save(buf, format="JPEG")
                     byte_im = buf.getvalue()
                     button = st.download_button(label="Download Image", data=byte_im, file_name=f"Scanned_{content_file.name}", mime="image/png")
-                    path = os.path.join(os.getcwd(), f"scan")
+                    path = os.path.join(os.getcwd(), "scan")
 
                     # file_path = os.path.join(path, f"{content_file.name}.png")
                     # final_path = os.path.splitext(file_path)[0]
